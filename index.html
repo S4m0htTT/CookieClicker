@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Cookie Clicker</title>
+</head>
+
+<body>
+    <section id="container">
+        <div id="container-compteur">
+            <div>
+                <p>Nombre de cookie : </p>
+                <p id="compteur"></p>
+            </div>
+            <div>
+                <p>Nombre de grand-mère : </p>
+                <p id="grandmatxt"></p>
+            </div>
+            <div>
+                <p>Nombre de ferme : </p>
+                <p id="farmtxt"></p>
+            </div>
+        </div>
+        <div id="container-button">
+            <p onclick="getMa()" id="getgrandma" class="button">GET GRANDMA</p>
+            <p onclick="getFar()" id="getfarm" class="button">GET FARM</p>
+        </div>
+    </section>
+    <img onclick="cookieClick()" src="img/cookie.webp" id="cookie" alt="Cookie">
+
+    <script src="main.js"></script>
+    <script src="animCookie.js"></script>
+</body>
+
+</html>
